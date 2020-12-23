@@ -9,9 +9,11 @@ import { PostComponent } from './components/post/post.component';
 import { PostItemComponent } from './components/post/post-item/post-item.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { CommentItemComponent } from './components/comment/comment-item/comment-item.component';
+import { UserComponent } from './components/user/user.component';
+import { UserItemComponent } from './components/user/user-item/user-item.component';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, PostItemComponent, CommentComponent, CommentItemComponent],
+  declarations: [AppComponent, PostComponent, PostItemComponent, CommentComponent, CommentItemComponent, UserComponent, UserItemComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

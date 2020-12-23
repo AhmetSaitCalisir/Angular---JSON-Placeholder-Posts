@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">{{ post.title }}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ post.userId }}</h6>
+    <app-user-item [user]="user"></app-user-item>
     <p class="card-text">
       {{ post.body }}
     </p>
