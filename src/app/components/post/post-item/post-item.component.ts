@@ -25,6 +25,8 @@ export class PostItemComponent implements OnInit {
 
   user: User = new User(0, 'KULLANICI YÜKLENİYOR', 'KULLANICI YÜKLENİYOR');
 
+  commentShow: boolean = false;
+
   constructor(
     private commentService: CommentService,
     private userService: UserService
@@ -37,5 +39,9 @@ export class PostItemComponent implements OnInit {
     this.userService.getUser(this.post.userId).subscribe((user) => {
       this.user = user;
     });
+  }
+
+  commentToggle() {
+    this.commentShow = !this.commentShow;
   }
 }
