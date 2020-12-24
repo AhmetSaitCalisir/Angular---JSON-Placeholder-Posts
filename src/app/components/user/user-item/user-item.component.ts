@@ -15,4 +15,8 @@ export class UserItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  userUrl(): string {
+    return `/user/${this.user.id}`;
+  }
 }

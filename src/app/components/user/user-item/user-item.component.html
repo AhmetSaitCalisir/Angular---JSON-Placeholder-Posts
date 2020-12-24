@@ -1,4 +1,8 @@
 <div>
-  <p class="text-monospace">{{ user.name }}</p>
-  <p class="font-weight-light text-right">{{ user.email }}</p>
+  <a routerLink="{{ userUrl() }}" class="text-reset text-monospace">{{
+    user.name
+  }}</a>
+  <p class="text-reset font-weight-light text-right">
+    <a routerLink="{{ userUrl() }}" class="text-reset">{{ user.email }}</a>
+  </p>
 </div>
