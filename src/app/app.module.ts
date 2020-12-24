@@ -12,9 +12,22 @@ import { CommentItemComponent } from './components/comment/comment-item/comment-
 import { UserComponent } from './components/user/user.component';
 import { UserItemComponent } from './components/user/user-item/user-item.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PageMainComponent } from './pages/page-main/page-main.component';
+import { PageUserComponent } from './pages/page-user/page-user.component';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, PostItemComponent, CommentComponent, CommentItemComponent, UserComponent, UserItemComponent, NavbarComponent],
+  declarations: [
+    AppComponent,
+    PostComponent,
+    PostItemComponent,
+    CommentComponent,
+    CommentItemComponent,
+    UserComponent,
+    UserItemComponent,
+    NavbarComponent,
+    PageMainComponent,
+    PageUserComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

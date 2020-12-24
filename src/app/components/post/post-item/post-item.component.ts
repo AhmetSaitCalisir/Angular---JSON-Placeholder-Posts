@@ -1,4 +1,4 @@
-import { CommentService } from './../../../services/comment.service';
+import { PostService } from './../../../services/post.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { Comment } from 'src/app/models/Comment';
 import { Post } from 'src/app/models/Post';
@@ -28,12 +28,12 @@ export class PostItemComponent implements OnInit {
   commentShow: boolean = false;
 
   constructor(
-    private commentService: CommentService,
-    private userService: UserService
+    private userService: UserService,
+    private postService: PostService
   ) {}
 
   ngOnInit(): void {
-    this.commentService.getPostComments(this.post.id).subscribe((comments) => {
+    this.postService.getPostComments(this.post.id).subscribe((comments) => {
       this.comments = comments;
     });
     this.userService.getUser(this.post.userId).subscribe((user) => {

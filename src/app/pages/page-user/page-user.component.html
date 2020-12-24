@@ -1,5 +1,8 @@
 <div class="container-fluid">
-  <div class="row justify-content-center">
+  <div class="row">
+    <div class="col"><app-user-item [user]="user"></app-user-item></div>
+  </div>
+  <div class="row">
     <div class="col-12" *ngFor="let post of posts">
       <app-post-item [post]="post"></app-post-item>
     </div>
