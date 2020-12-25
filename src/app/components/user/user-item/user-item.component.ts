@@ -12,6 +12,7 @@ export class UserItemComponent implements OnInit {
     'KULLANICI YÜKLENİYOR',
     'KULLANICI YÜKLENİYOR'
   );
+
   constructor() {}
 
   ngOnInit(): void {}
